@@ -5,10 +5,15 @@
  */
 package buildingsensors;
 
+import java.util.Date;
+
 /**
  *
  * @author laurabrinkholmjustesen
  */
 public class Reading {
+    // Data fields
+    private Date time;
+    private double measurement;
     
 }
