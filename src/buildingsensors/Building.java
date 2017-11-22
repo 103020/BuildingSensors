@@ -5,10 +5,15 @@
  */
 package buildingsensors;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author laurabrinkholmjustesen
  */
 public class Building {
-    
+    // Data fields
+    private String name;
+    private String address;
+    private ArrayList<Sensor> sensors;
 }
