@@ -48,6 +48,12 @@ public class Building {
         this.sensors.remove(sensor);
     }
     
+    // This method returns a String description of the building
+    public String getDescription() {
+        String returnString = "Name: " + this.name + "\nAddress: " + this.address;
+        return returnString;
+    }
+    
     // Get measurements from sensors
     
     // This method returns the name of the building
