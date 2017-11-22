@@ -6,9 +6,9 @@
 package buildingsensors;
 
 /**
- *
+ * Test
  * @author 103020
- */
+ */ 
 public class BuildingSensors {
 
     /**
