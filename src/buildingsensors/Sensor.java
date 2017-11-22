@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author laurabrinkholmjustesen
  */
 public class Sensor {
-    private final int id;
+    private static int id;
     private ArrayList<Reading> rList;
 
     public Sensor(int id){
