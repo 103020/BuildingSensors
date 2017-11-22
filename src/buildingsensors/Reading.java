@@ -19,28 +19,28 @@ public class Reading {
     private boolean type;
     
     /**
-     * Constructor for measurement
-     * @param measurement 
+     * Constructor for measurement, id and type
      */
-    public Reading(double measurement) {
+    public Reading(double measurement, int id, boolean type) {
         this.measurement = measurement;
-    }
-    
-    /**
-     * Constructor for id
-     * @param id 
-     */
-    public Reading(int id) {
         this.id = id;
-    }
-    
-    /**
-     * Constructor for type
-     * @param type 
-     */
-    public Reading(boolean type) {
         this.type = type;
-    
+    }
+
+    public Date getTime() {
+        return time;
+    }
+
+    public double getMeasurement() {
+        return measurement;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public boolean isType() {
+        return type;
     }
     
     @Override
