@@ -10,5 +10,5 @@ package buildingsensors;
  * @author laurabrinkholmjustesen
  */
 public class Building {
-    
+
 }
