@@ -16,4 +16,10 @@ public class Reading {
     private Date time;
     private double measurement;
     
+    
+    
+    @Override
+    public String toString(){
+        return "time: " + time + " measurement: " + measurement;
+    }
 }

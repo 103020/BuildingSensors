@@ -55,6 +55,9 @@ public class Sensor {
         return this.rList;
     }
     
+    /**
+     * 
+     */
     public void printHistory(){
         for(Reading r : rList){
             System.out.println(r.toString());
