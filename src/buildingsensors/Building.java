@@ -16,4 +16,9 @@ public class Building {
     private String name;
     private String address;
     private ArrayList<Sensor> sensors;
+    
+    // This method returns the name of the building
+    public String getName() {
+        return this.name;
+    }
 }
