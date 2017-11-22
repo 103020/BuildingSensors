@@ -15,8 +15,33 @@ public class Reading {
     // Data fields
     private Date time;
     private double measurement;
+    private int id;
+    private boolean type;
     
+    /**
+     * Constructor for measurement
+     * @param measurement 
+     */
+    public Reading(double measurement) {
+        this.measurement = measurement;
+    }
     
+    /**
+     * Constructor for id
+     * @param id 
+     */
+    public Reading(int id) {
+        this.id = id;
+    }
+    
+    /**
+     * Constructor for type
+     * @param type 
+     */
+    public Reading(boolean type) {
+        this.type = type;
+    
+    }
     
     @Override
     public String toString(){
