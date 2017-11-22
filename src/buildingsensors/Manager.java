@@ -9,7 +9,7 @@ package buildingsensors;
  * Test
  * @author 103020
  */ 
-public class System {
+public class Manager {
 
     /**
      * @param args the command line arguments
