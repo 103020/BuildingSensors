@@ -5,10 +5,61 @@
  */
 package buildingsensors;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author laurabrinkholmjustesen
  */
 public class Building {
-
+    // Data fields
+    private String name;
+    private String address;
+    private ArrayList<Sensor> sensors;
+    
+    // This constructor creates a Building object with the specified name and
+    // address.
+    public Building(String name, String address) {
+        this.name = name;
+        this.address = address;
+    }
+    
+    // This constructor creates a Building object with the specified name,
+    // address, and sensors
+    public Building(String name, String address, ArrayList<Sensor> sensors) {
+        this(name, address);
+        this.sensors = sensors;
+    }
+    
+    // This method adds a sensor to the building
+    public void addSensor(Sensor sensor) {
+        this.sensors.add(sensor);
+    }
+    
+    // This method removes a sensor from the building
+    public void removeSensor(Sensor sensor) {
+        this.sensors.remove(sensor);
+    }
+    
+    // Get measurements from sensors
+    
+    // This method returns the name of the building
+    public String getName() {
+        return this.name;
+    }
+    
+    // This method sets the name of the building
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    // This method returns the address of the building
+    public String getAddress() {
+        return this.address;
+    }
+    
+    // This method sets the address of the building
+    public void setAddress(String address) {
+        this.address = address;
+    }
 }
