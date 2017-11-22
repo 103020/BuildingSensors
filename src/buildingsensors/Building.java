@@ -31,9 +31,15 @@ public class Building {
         this.sensors = sensors;
     }
     
-    // This method adds a sensor to the building
+    // This method adds a sensor with an initial reading to the building
     public void addSensor(int sensorID, Reading initialReading) {
         Sensor sensor = new Sensor(sensorID, initialReading);
+        this.sensors.add(sensor);
+    }
+    
+    // This method adds a sensor without an initial reading to the building
+    public void addSensor(int sensorID) {
+        Sensor sensor = new Sensor(sensorID);
         this.sensors.add(sensor);
     }
     
