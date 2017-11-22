@@ -32,7 +32,8 @@ public class Building {
     }
     
     // This method adds a sensor to the building
-    public void addSensor(Sensor sensor) {
+    public void addSensor(int sensorID, Reading initialReading) {
+        Sensor sensor = new Sensor(sensorID, initialReading);
         this.sensors.add(sensor);
     }
     
