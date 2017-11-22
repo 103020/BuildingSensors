@@ -10,6 +10,7 @@ import java.util.ArrayList;
 /**
  *
  * @author laurabrinkholmjustesen
+ * @author 103020
  */
 public class Sensor {
     private static int id;
