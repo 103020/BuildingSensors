@@ -49,7 +49,8 @@ public class Building {
     }
     
     // This method returns a String description of the building
-    public String getDescription() {
+    @Override
+    public String toString() {
         String returnString = "Name: " + this.name + "\nAddress: " + this.address;
         return returnString;
     }
