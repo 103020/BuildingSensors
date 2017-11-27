@@ -57,12 +57,8 @@ public class FXMLDocumentController implements Initializable {
         if (event.getSource() == buttonAddBuilding) {
             System.out.println(textBuildingAddresse.getText() + " " + textBuildingName.getText());
             if (!textBuildingName.getText().isEmpty() || !textBuildingAddresse.getText().isEmpty()) {
-                /*ArrayList alist = new ArrayList();
-                alist.add(new buildingsensors.Building(textBuildingName.getText(), textBuildingAddresse.getText()));
-                ObservableList<String> oList = FXCollections.observableArrayList("First word","Second word", "Third word", "Etc.");
-                ListView<String> listView = new ListView<String>(oList);*/
+                //adds a building to the listview
                 buildingList.getItems().add(new buildingsensors.Building(textBuildingName.getText(), textBuildingAddresse.getText()));
-                //new buildingsensors.Building(textBuildingName.getText(), textBuildingAddresse.getText())
             }
         } else if (event.getSource() == buttonAddMeasurement) {
             
