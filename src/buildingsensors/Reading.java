@@ -5,6 +5,7 @@
  */
 package buildingsensors;
 
+import java.time.Instant;
 import java.util.Date;
 
 /**
@@ -25,6 +26,7 @@ public class Reading {
         this.measurement = measurement;
         this.id = id;
         this.type = type;
+        time = Date.from(Instant.now());
     }
 
     public Date getTime() {

@@ -13,7 +13,7 @@ import java.util.ArrayList;
  * @author 103020
  */
 public class Sensor {
-    private static int id;
+    private int id;
     private ArrayList<Reading> rList;
 
     /**
@@ -22,6 +22,7 @@ public class Sensor {
      */
     public Sensor(int id){
         this.id = id;
+        rList = new ArrayList<>();
     }
     /**
      * constructor
@@ -30,6 +31,7 @@ public class Sensor {
      */
     public Sensor(int id, Reading r){
         this.id = id;
+        rList = new ArrayList<>();
         setReading(r);
     }
     /**
@@ -63,5 +65,8 @@ public class Sensor {
         for(Reading r : rList){
             System.out.println(r.toString());
         }
+    }
+    public String toString(){
+        return "id: "+id;
     }
 }

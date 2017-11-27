@@ -22,6 +22,7 @@ public class Building {
     public Building(String name, String address) {
         this.name = name;
         this.address = address;
+        sensors = new ArrayList<>();
     }
     
     // This constructor creates a Building object with the specified name,
@@ -76,4 +77,9 @@ public class Building {
     public void setAddress(String address) {
         this.address = address;
     }
+
+    public ArrayList<Sensor> getSensors() {
+        return sensors;
+    }
+    
 }
