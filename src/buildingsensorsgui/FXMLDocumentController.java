@@ -6,7 +6,10 @@
 package buildingsensorsgui;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -21,9 +24,9 @@ import javafx.scene.control.TextField;
 public class FXMLDocumentController implements Initializable {
     
     @FXML
-    private ListView<?> buildingList;
+    private ListView<buildingsensors.Building> buildingList;
     @FXML
-    private ListView<?> sensorList;
+    private ListView<buildingsensors.Sensor> sensorList;
     @FXML
     private TextField textBuildingName;
     @FXML
@@ -51,8 +54,31 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private void handleButtonAction(ActionEvent event) {
-        System.out.println(event.getSource());
-        System.out.println("You clicked "+ event +"!");
+        if (event.getSource() == buttonAddBuilding) {
+            System.out.println(textBuildingAddresse.getText() + " " + textBuildingName.getText());
+            if (!textBuildingName.getText().isEmpty() || !textBuildingAddresse.getText().isEmpty()) {
+                /*ArrayList alist = new ArrayList();
+                alist.add(new buildingsensors.Building(textBuildingName.getText(), textBuildingAddresse.getText()));
+                ObservableList<String> oList = FXCollections.observableArrayList("First word","Second word", "Third word", "Etc.");
+                ListView<String> listView = new ListView<String>(oList);*/
+                buildingList.getItems().add(new buildingsensors.Building(textBuildingName.getText(), textBuildingAddresse.getText()));
+                //new buildingsensors.Building(textBuildingName.getText(), textBuildingAddresse.getText())
+            }
+        } else if (event.getSource() == buttonAddMeasurement) {
+            
+        } else if (event.getSource() == buttonAddSensor) {
+            
+        } else if (event.getSource() == buttonGetDataFromAll) {
+            
+        } else if (event.getSource() == buttonGetMeasurement) {
+            
+        } else if (event.getSource() == buttonHistory) {
+            
+        } else if (event.getSource() == buttonRemoveBuilding) {
+            
+        } else if (event.getSource() == buttonRemoveSensor) {
+            
+        }
     }
     
     @Override

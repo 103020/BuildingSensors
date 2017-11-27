@@ -34,7 +34,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="buttonAddBuilding" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="633.0" text="Button" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+            <Button fx:id="buttonAddBuilding" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="633.0" text="Add Building" GridPane.columnSpan="2" GridPane.rowIndex="2" />
             <TextField fx:id="textBuildingName" GridPane.columnSpan="2" />
             <TextField fx:id="textBuildingAddresse" GridPane.columnSpan="2" GridPane.rowIndex="1" />
          </children>
@@ -52,8 +52,8 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="buttonGetDataFromAll" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="797.0" text="Button" GridPane.columnSpan="2" />
-            <Button fx:id="buttonRemoveBuilding" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="684.0" text="Button" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+            <Button fx:id="buttonGetDataFromAll" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="797.0" text="Get Data from Sensors" GridPane.columnSpan="2" />
+            <Button fx:id="buttonRemoveBuilding" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="684.0" text="Remove Building" GridPane.columnSpan="2" GridPane.rowIndex="1" />
          </children>
       </GridPane>
       <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
@@ -69,10 +69,10 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="buttonGetMeasurement" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="752.0" text="Button" GridPane.columnSpan="2" />
-            <Button fx:id="buttonHistory" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="959.0" text="Button" GridPane.columnSpan="2" GridPane.rowIndex="1" />
-            <Button fx:id="buttonAddSensor" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="957.0" text="Button" GridPane.columnSpan="2" GridPane.rowIndex="3" />
-            <Button fx:id="buttonRemoveSensor" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="465.0" text="Button" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+            <Button fx:id="buttonGetMeasurement" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="752.0" text="Get Measurement" GridPane.columnSpan="2" />
+            <Button fx:id="buttonHistory" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="959.0" text="Get History" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+            <Button fx:id="buttonAddSensor" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="957.0" text="Add Sensor" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+            <Button fx:id="buttonRemoveSensor" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="465.0" text="Remove Sensor" GridPane.columnSpan="2" GridPane.rowIndex="4" />
             <TextField fx:id="sensorField" GridPane.columnSpan="2" GridPane.rowIndex="2" />
          </children>
       </GridPane>
@@ -90,7 +90,7 @@
         </rowConstraints>
          <children>
             <TextField fx:id="MeasurementField" />
-            <Button fx:id="buttonAddMeasurement" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="752.0" text="Button" GridPane.rowIndex="1" />
+            <Button fx:id="buttonAddMeasurement" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="752.0" text="Add Measurement" GridPane.rowIndex="1" />
          </children>
       </GridPane>
    </children>
