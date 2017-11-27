@@ -10,6 +10,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
@@ -29,6 +30,26 @@ public class FXMLDocumentController implements Initializable {
     private TextField textBuildingName;
     @FXML
     private TextField textBuildingAddresse;
+    @FXML
+    private Button buttonAddBuilding;
+    @FXML
+    private Button buttonGetDataFromAll;
+    @FXML
+    private Button buttonRemoveBuilding;
+    @FXML
+    private Button buttonGetMeasurement;
+    @FXML
+    private Button buttonHistory;
+    @FXML
+    private Button buttonAddSensor;
+    @FXML
+    private Button buttonRemoveSensor;
+    @FXML
+    private TextField sensorField;
+    @FXML
+    private TextField MeasurementField;
+    @FXML
+    private Button buttonAddMeasurement;
     
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
