@@ -14,10 +14,10 @@ public class Manager {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         Building b1 = new Building("The Tower", "TowerRoad 1");
         Sensor s1 = new Sensor(1);
         //Reading r1 = new Reading(0);
-    }
+    }*/
     
 }

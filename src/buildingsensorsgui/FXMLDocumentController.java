@@ -11,7 +11,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 
@@ -21,7 +20,6 @@ import javafx.scene.control.TextField;
  */
 public class FXMLDocumentController implements Initializable {
     
-    private Label label;
     @FXML
     private ListView<?> buildingList;
     @FXML
@@ -51,9 +49,10 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private Button buttonAddMeasurement;
     
+    @FXML
     private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+        System.out.println(event.getSource());
+        System.out.println("You clicked "+ event +"!");
     }
     
     @Override
